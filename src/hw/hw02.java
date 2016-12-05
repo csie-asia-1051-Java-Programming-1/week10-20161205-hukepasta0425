@@ -16,13 +16,15 @@ public class hw02 {
 		int b = data[1];
 		int c = data[2];
 		int d = data[3];
-		if (a == b || b == c || c == d || a == d) {
+		if (a == b || a == c || a == d || b == c || b == d || c == d) {
 			for (int i = 0; i < 4; i++) {
 				if (data[i] > max) {
 					max = data[i];
 				}
 			}
 			System.out.print(max * 2);
+		} else {
+			System.out.print("R");
 		}
 	}
 }
